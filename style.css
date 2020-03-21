@@ -114,7 +114,7 @@ blockquote::after {
 
 
 html {
-	font-size: 62.5%; /* 1rem = 10px */
+	font-size: 63%; /* 1rem = 10px */
 }
 /*
 @media (prefers-reduced-motion: reduce) {
