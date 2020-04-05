@@ -265,6 +265,26 @@ function twentytwenty_menus() {
 add_action( 'init', 'twentytwenty_menus' );
 
 /**
+ * Adding custom values to WP theme menu
+ * By: Diane Peshlakai
+ *
+ **/
+function wp_nav_menu_item_custom_fields () {
+    esc_html_e( 'Howdy! WordPress 5.4 is on!', 'wporg' );
+}
+add_action( 'wp_nav_menu_item_custom_fields', 'wp_my_custom_field' );
+
+		$defaults = array(
+		'menu' => __( '' ),
+		'menu_id' => __( '' ),
+		'depth' => __('0'),
+);
+$args = wp_parse_args($args, $defaults);
+
+
+
+
+/**
  * Get the information about the logo.
  *
  * @param string $html The HTML output from get_custom_logo (core function).
